@@ -1,0 +1,7 @@
+SET(CMAKE_BUILD_TYPE "Release")
+cmake_minimum_required(VERSION 3.5)
+INCLUDE_DIRECTORIES(/usr/local/include)
+link_directories(/usr/local/lib)
+ADD_EXECUTABLE(useHello sayhello.cpp)
+TARGET_LINK_LIBRARIES(useHello libhello.so)
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin) 
